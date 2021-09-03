@@ -49,11 +49,19 @@ export default function Homepage() {
   return (
     <div className="bodyStyle">
       <header>
-        <h1 className="wText">Rock Paper Scissors</h1>
+        <div className={style.titlePlacement}>
+          <h1 className="wText">Rock Paper Scissors</h1>
+        </div>
         <div className={style.scoreBoard}>
-          <h2>Player {playerScore}</h2>
+          <div className={style.bodyStyle}>
+            <h2>Player</h2>
+            <h2 className={style.scoreCounter}>{playerScore}</h2>
+          </div>
           <h2>Score</h2>
-          <h2>{computerScore} Computer</h2>
+          <div className={style.bodyStyle}>
+            <h2 className={style.scoreCounter}>{computerScore}</h2>
+            <h2>Computer</h2>
+          </div>
         </div>
       </header>
       <main>

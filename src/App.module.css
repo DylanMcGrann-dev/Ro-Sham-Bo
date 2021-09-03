@@ -12,6 +12,10 @@ main {
   display: flex;
 }
 h1 {
+  border-style: outset;
+  border-radius: 10px;
+}
+.titlePlacement {
   display: flex;
   justify-content: center;
 }
@@ -24,13 +28,27 @@ footer {
   display: flex;
 
 }
+.scoreCounter {
+  font-family: "VT323";
+  margin-top: inherit;
+  margin-bottom: inherit;
+  font-size: 5em;
+  color: #cb3535;
+  border-style: inset;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #333030;
+}
 .scoreBoard {
   display: flex;
   justify-content: space-evenly;
 }
 .bodyStyle {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 250px;
 }
 .WText {
   color: antiquewhite;
