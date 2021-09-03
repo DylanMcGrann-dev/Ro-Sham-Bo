@@ -1,0 +1,41 @@
+body {
+  background-color: #9874e3;
+  
+}
+header {
+  background: lightgrey;
+  border-style: outset;
+  border-width: 8px;
+}
+main {
+  flex-direction: column;
+  display: flex;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+
+}
+.scoreBoard {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bodyStyle {
+  display: flex;
+  flex-direction: column;
+}
+.WText {
+  color: antiquewhite;
+}
+
+
+
+

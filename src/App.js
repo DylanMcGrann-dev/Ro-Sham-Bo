@@ -1,11 +1,8 @@
-import React, {useState} from 'react';
 import Homepage from './components/HomePage';
-import './App.css';
-
+import './App.module.css';
 
 function App() {
 
-  
   return (
     <div>
        <Homepage/>
