@@ -1,0 +1,23 @@
+:root {
+  --main-Button-color: #cb3535;
+  --button-size:80px
+}
+
+button {
+  margin: 1em;
+  border-radius: 50%;
+  background-color: var(--main-Button-color);
+  height: var(--button-size);
+  width: var(--button-size);
+  border-style: none;
+  box-shadow: 0 0 0 8px rgb(203, 53, 52),
+   inset 0 0 2px 3px rgb(105, 36, 36),
+   inset 0 0 2px 4px rgb(255, 160, 160),
+   inset 0 0 2px 8px rgb(203, 63, 63),
+   inset 0 25px 10px rgb(200, 30, 30);
+}
+
+
+button:active {
+  
+}

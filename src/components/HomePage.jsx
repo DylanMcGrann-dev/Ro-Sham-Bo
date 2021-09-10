@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from '../App.module.css';
+import Button from './Button';
 
 export default function Homepage() {
   const [playerState, setPlayerState] = useState("");
@@ -7,7 +8,7 @@ export default function Homepage() {
   const [computerScore, setComputerScore] = useState(0);
   const [playerScore, setPlayerScore] = useState(0);
 
-  
+
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
@@ -49,18 +50,17 @@ export default function Homepage() {
   return (
     <div className="bodyStyle">
       <header>
-        <div className={style.titlePlacement}>
-          <h1 className="wText">Rock Paper Scissors</h1>
-        </div>
         <div className={style.scoreBoard}>
           <div className={style.bodyStyle}>
-            <h2>Player</h2>
+            <h2 className={style.text}>Player</h2>
             <h2 className={style.scoreCounter}>{playerScore}</h2>
           </div>
-          <h2>Score</h2>
+          <div className={style.titlePlacement}>
+            <h1 className="wText">Rock Paper Scissors</h1>
+          </div>
           <div className={style.bodyStyle}>
             <h2 className={style.scoreCounter}>{computerScore}</h2>
-            <h2>Computer</h2>
+            <h2 className={style.text}>Computer</h2>
           </div>
         </div>
       </header>
@@ -70,17 +70,23 @@ export default function Homepage() {
           <span>{computerState} Computer</span>
         </div>
       </main>
-      <article>
-        <div className={style.scoreBoard}>
-          <button onClick={() => setPlayerState("rock")}>rock</button>
-          <button onClick={() => setPlayerState("paper")}>paper</button>
-          <button onClick={() => setPlayerState("scissors")}>scissors</button>
-        </div>
-        <div>
-          <button onClick={() => whoWins(arr[getRandomInt(3)])}>Submit</button>
-        </div>
-      </article>
       <footer>
+        <article>
+          <div className={style.scoreBoard}>
+            <Button
+              text='rock'
+              onClick={setPlayerState} />
+            <Button
+              text='paper'
+              onClick={setPlayerState} />
+            <Button
+              text='scissors'
+              onClick={setPlayerState} />
+          </div>
+          <div>
+            <button onClick={() => whoWins(arr[getRandomInt(3)])}>Submit</button>
+          </div>
+        </article>
         <div>
           <h2>HighScore</h2>
         </div>

@@ -12,9 +12,30 @@ main {
   display: flex;
 }
 h1 {
+  font-family: "Press Start 2P";
   border-style: outset;
   border-radius: 10px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 20px;
 }
+.text {
+  font-family: "Press Start 2P";
+  border-style: outset;
+  border-radius: 10px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
 .titlePlacement {
   display: flex;
   justify-content: center;
@@ -26,16 +47,17 @@ article {
 }
 footer {
   display: flex;
+  flex-direction: column;
 
 }
 .scoreCounter {
-  font-family: "VT323";
-  margin-top: inherit;
-  margin-bottom: inherit;
-  font-size: 5em;
+  font-family: "Press Start 2P";
+  margin: 10px;
+  padding: 10px;
+  font-size: 2.5em;
   color: #cb3535;
   border-style: inset;
-  width: 50px;
+  width: 80px;
   display: flex;
   justify-content: center;
   background-color: #333030;
