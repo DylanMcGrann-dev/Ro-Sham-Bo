@@ -1,11 +1,12 @@
 import React from 'react';
-import '../styleSheets/Buttons.module.css'
+import style from '../styleSheets/Buttons.module.css'
 export default function Button(props) {
 
   return (
     <div>
-      <div>
-        <button onClick={() => props.onClick(props.text)}>{props.text}</button>
+      <div className={style.buttonDiv}>
+        <button onClick={() => props.onClick(props.text)}/>
+        <p>{props.text}</p>
       </div>
     </div>
   )

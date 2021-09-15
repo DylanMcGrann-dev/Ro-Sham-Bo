@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import style from '../App.module.css';
+import style from '../styleSheets/App.module.css'
 import Button from './Button';
 
 export default function Homepage() {
@@ -48,19 +48,20 @@ export default function Homepage() {
 
 
   return (
-    <div className="bodyStyle">
+    <div className={style.bodyStyle}>
       <header>
         <div className={style.scoreBoard}>
-          <div className={style.bodyStyle}>
+          <div className={style.scoreBoardStyle}>
             <h2 className={style.text}>Player</h2>
             <h2 className={style.scoreCounter}>{playerScore}</h2>
           </div>
           <div className={style.titlePlacement}>
-            <h1 className="wText">Rock Paper Scissors</h1>
+            <h1 className={style.text}>Rock Paper</h1>
+            <h1 className={style.text}>Scissors</h1>
           </div>
-          <div className={style.bodyStyle}>
-            <h2 className={style.scoreCounter}>{computerScore}</h2>
+          <div className={style.scoreBoardStyle}>
             <h2 className={style.text}>Computer</h2>
+            <h2 className={style.scoreCounter}>{computerScore}</h2>
           </div>
         </div>
       </header>
@@ -87,9 +88,6 @@ export default function Homepage() {
             <button onClick={() => whoWins(arr[getRandomInt(3)])}>Submit</button>
           </div>
         </article>
-        <div>
-          <h2>HighScore</h2>
-        </div>
       </footer>
     </div>
   )

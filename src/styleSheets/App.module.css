@@ -1,54 +1,52 @@
+
 body {
   background-color: #9874e3;
-  
+  height: 100vh;
+  margin: 0;
 }
-header {
+header,footer {
   background: lightgrey;
   border-style: outset;
   border-width: 8px;
+  min-height: 50px;
 }
 main {
   flex-direction: column;
   display: flex;
+  height:52vh;
 }
 h1 {
-  font-family: "Press Start 2P";
-  border-style: outset;
-  border-radius: 10px;
-  width: 450px;
   display: flex;
-  justify-content: center;
-  letter-spacing: 2px;
-  font-size: 20px;
-  padding: 10px;
-  padding-top: 20px;
+  align-items: flex-start;
+  height: 4vmin;
 }
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top:auto;
+}
+
 .text {
   font-family: "Press Start 2P";
-  border-style: outset;
-  border-radius: 10px;
-  width: 450px;
   display: flex;
   justify-content: center;
   letter-spacing: 2px;
-  font-size: 20px;
-  padding: 10px;
-  padding-top: 20px;
+  font-size: 2vmax;
 }
 
 .titlePlacement {
   display: flex;
   justify-content: center;
-}
-article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-footer {
-  display: flex;
   flex-direction: column;
-
+  width: 30vmax;
+  height:10vmin;
+  border-style: outset;
+  border-radius: 10px;
 }
 .scoreCounter {
   font-family: "Press Start 2P";
@@ -64,13 +62,15 @@ footer {
 }
 .scoreBoard {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .bodyStyle {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .WText {
   color: antiquewhite;
