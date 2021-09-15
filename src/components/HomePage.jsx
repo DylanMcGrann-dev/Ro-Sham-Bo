@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from '../styleSheets/App.module.css'
 import Button from './Button';
+import Hands from './Hands';
 
 export default function Homepage() {
   const [playerState, setPlayerState] = useState("");
@@ -67,6 +68,8 @@ export default function Homepage() {
       </header>
       <main>
         <div className={style.scoreBoard}>
+          <Hands playerState={playerState}/>
+          <Hands computerState={computerState}/>
           <span>player {playerState}</span>
           <span>{computerState} Computer</span>
         </div>
