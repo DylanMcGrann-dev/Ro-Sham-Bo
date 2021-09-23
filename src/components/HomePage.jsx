@@ -67,12 +67,9 @@ export default function Homepage() {
         </div>
       </header>
       <main>
-        <div className={style.scoreBoard}>
-          <Hands playerState={playerState}/>
-          <Hands computerState={computerState}/>
-          <span>player {playerState}</span>
-          <span>{computerState} Computer</span>
-        </div>
+          <Hands 
+            playerState={playerState}
+            computerState={computerState}/>
       </main>
       <footer>
         <article>

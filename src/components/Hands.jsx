@@ -1,17 +1,30 @@
 import React from "react";
-import style from "../styleSheets/Hands.module.css";
+import "../styleSheets/Hands.css";
+
 
 export default function Hands(props) {
 
+
   return (
-    <div className={style.hand}>
-      <div className={style.fist}></div>
-      <div className={style.finger}></div>
-      <div className={style.finger}></div>
-      <div className={style.finger}></div>
-      <div className={style.finger}></div>
-      <div className={style.thumb}></div>
-      <div className={style.arm}></div>
+    <div>
+      <div class='hand'>
+        <div class='fist'></div>
+        <div class='finger finger1'></div>
+        <div class='finger finger2'></div>
+        <div class='finger finger3'></div>
+        <div class='finger finger4'></div>
+        <div class='thumb'></div>
+        <div class='arm'></div>
+      </div>
+      <div class='hand'>
+        <div class='compFist'></div>
+        <div class='finger CompFinger1'></div>
+        <div class='finger CompFinger2'></div>
+        <div class='finger CompFinger3'></div>
+        <div class='finger CompFinger4'></div>
+        <div class='compThumb'></div>
+        <div class='compArm'></div>
+      </div>
     </div>
 
   )

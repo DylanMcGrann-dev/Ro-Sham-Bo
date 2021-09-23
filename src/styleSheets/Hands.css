@@ -1,0 +1,96 @@
+@keyframes handShake {
+  0%,100% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+.hand {
+  margin: 20px;
+  width: 200px;
+  height: 175px;
+  position: relative;
+  transform: rotate(10deg);
+  display: inline-block;
+  animation: handShake 2s infinite;
+}
+#left div{
+  transform: scalex(-1);
+}
+.hand > div {
+  position:absolute;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background: rgb(243, 191, 94);
+  transition: all 0.1s;
+}
+
+.fist {
+  height: 110px;
+  left: 40px;
+  top: 50px;
+  width: 90px;
+  border-radius: 20px 0 0 30px;
+} 
+.compFist {
+  height: 110px;
+  left: 40px;
+  top: 50px;
+  width: 90px;
+  border-radius: 0 20px 30px 0;
+}
+
+.finger {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  transform-origin: 0 50%;
+}
+  
+.finger1 {  top: 50px; left:80px;}
+.finger2 { top: 78px; left: 84px; --dif: 4px; }
+.finger3 { top: 106px; left:78px; --dif: 0px; }
+.finger4 { top: 134px; height: 26px; left: 74px; --dif: -8px; }
+
+.CompFinger1 { top: 50px; left:15px;}
+.CompFinger2 { top: 78px; left:-5px}
+.CompFinger3 { top: 106px; left:1px}
+.CompFinger4 { top: 134px; left:5px; height:26px;}
+
+
+div.thumb {
+  width: 35px;
+  height: 70px;
+  border-radius: 0 25px 20px 20px;
+  top: 50px;
+  left: 80px;
+  border-left: 0 solid;
+  box-shadow: -17px 6px 0 -15px black;
+}
+div.compThumb {
+  width: 35px;
+  height: 70px;
+  border-radius: 25px 0 20px 20px;
+  top: 50px;
+  left: 55px;
+  border-left: 0 solid;
+  box-shadow: -17px 6px 0 -15px black;
+}
+
+div.arm {
+  width: 22px;
+  height: 70px;
+  left: 20px;
+  top: 70px;
+  border: 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+div.compArm {
+  width: 22px;
+  height: 70px;
+  right:50px;
+  top: 70px;
+  border: 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}

@@ -11,7 +11,7 @@ main {
   height:52vh;
   color:rgb(200, 200, 200);
   box-shadow: 0 0 0 20px black;
-
+  display: flex;
   align-items: center;
 }
 header,footer {
@@ -44,6 +44,7 @@ footer {
   letter-spacing: 2px;
   font-size: 2vmax;
 }
+
 
 .titlePlacement {
   display: flex;
