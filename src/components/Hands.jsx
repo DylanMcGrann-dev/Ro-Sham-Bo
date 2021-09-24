@@ -6,8 +6,8 @@ export default function Hands(props) {
 
 
   return (
-    <div>
-      <div class='hand'>
+    <div class='handsDisplay'>
+      <div class='hand playerShake'>
         <div class='fist'></div>
         <div class='finger finger1'></div>
         <div class='finger finger2'></div>
@@ -16,7 +16,8 @@ export default function Hands(props) {
         <div class='thumb'></div>
         <div class='arm'></div>
       </div>
-      <div class='hand'>
+  
+      <div class='hand compShake'>
         <div class='compFist'></div>
         <div class='finger CompFinger1'></div>
         <div class='finger CompFinger2'></div>
